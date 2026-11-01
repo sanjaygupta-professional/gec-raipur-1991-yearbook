@@ -52,7 +52,8 @@ core_photos = [
     "photo_deskewed.jpg",
     "photo_enhanced.jpg",
     "photo_original.jpg",
-    "mount_text_highres.jpg"
+    "mount_text_highres.jpg",
+    "gec_raipur_1991_batch_60s.mp4"
 ]
 for cp in core_photos:
     src = ROOT / "assets" / cp

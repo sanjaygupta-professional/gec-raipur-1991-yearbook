@@ -2,3 +2,7 @@ __pycache__/
 *.pyc
 .system_generated/
 *.tmp
+.hyperframes/
+*.wav
+video/hf-project/.hyperframes/
+video/hf-project/assets/

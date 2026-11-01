@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        #root {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        .beat5-wrapper {
+          position: relative;
+          width: 1500px;
+          height: 800px;
+          margin-top: 50px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }
+
+        .final-celebration-title {
+          font-size: 58px;
+          font-weight: 900;
+          background: linear-gradient(135deg, #f59e0b, #fbbf24, #ffffff);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          letter-spacing: -0.02em;
+          margin-bottom: 16px;
+        }
+
+        .final-subtext {
+          font-size: 24px;
+          color: #cbd5e1;
+          max-width: 940px;
+          line-height: 1.5;
+          margin-bottom: 36px;
+        }
+
+        .url-showcase-card {
+          background: rgba(15, 23, 42, 0.95);
+          border: 3px solid #10b981;
+          border-radius: 24px;
+          padding: 24px 50px;
+          display: flex;
+          align-items: center;
+          gap: 24px;
+          box-shadow: 0 20px 60px rgba(16, 185, 129, 0.35);
+          margin-bottom: 40px;
+        }
+
+        .college-badge {
+          width: 52px;
+          height: 52px;
+          background: linear-gradient(135deg, #d97706, #f59e0b);
+          border-radius: 12px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 900;
+          font-size: 24px;
+          color: #111827;
+        }
+
+        .url-link-text {
+          font-size: 40px;
+          font-weight: 800;
+          color: #ffffff;
+          letter-spacing: 0.02em;
+        }
+
+        .url-link-text span {
+          color: #10b981;
+        }
+
+        .live-pill {
+          background: rgba(16, 185, 129, 0.2);
+          border: 1px solid #10b981;
+          color: #34d399;
+          padding: 10px 20px;
+          border-radius: 20px;
+          font-size: 16px;
+          font-weight: 700;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+
+        .live-pill .dot {
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background: #10b981;
+          box-shadow: 0 0 10px #10b981;
+        }
+
+        .features-row {
+          display: flex;
+          gap: 24px;
+        }
+
+        .feature-item {
+          background: rgba(255, 255, 255, 0.06);
+          border: 1px solid rgba(255, 255, 255, 0.14);
+          padding: 14px 28px;
+          border-radius: 12px;
+          font-size: 17px;
+          font-weight: 700;
+          color: #e2e8f0;
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="beat5"
+        data-width="1920"
+        data-height="1080"
+      >
+        <div class="beat5-wrapper">
+          <h1 class="final-celebration-title" id="b5_title">
+            Cheers to 35 Years of Mechanical '91!
+          </h1>
+          <p class="final-subtext" id="b5_sub">
+            It’s live, completely private, and built for our batch. Open the link on your phone or laptop, find your face, and add your update!
+          </p>
+
+          <div class="url-showcase-card" id="b5_url_card">
+            <div class="college-badge">91</div>
+            <div class="url-link-text">
+              gec-raipur-1991<span>.pages.dev</span>
+            </div>
+            <div class="live-pill">
+              <span class="dot"></span> Online
+            </div>
+          </div>
+
+          <div class="features-row" id="b5_features">
+            <div class="feature-item">🔒 100% Private (No Login Required)</div>
+            <div class="feature-item">📱 Phone & Desktop Ready</div>
+            <div class="feature-item">🎨 5 Engineering Themes</div>
+            <div class="feature-item">💬 WhatsApp Direct Share</div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        const tl = gsap.timeline({ paused: true });
+
+        tl.fromTo("#b5_title",
+          { scale: 0.85, opacity: 0, y: -20 },
+          { scale: 1.0, opacity: 1, y: 0, duration: 1.0, ease: "back.out(1.5)" },
+          0.2
+        );
+
+        tl.fromTo("#b5_sub",
+          { opacity: 0, y: 20 },
+          { opacity: 1, y: 0, duration: 1.0, ease: "power2.out" },
+          0.6
+        );
+
+        tl.fromTo("#b5_url_card",
+          { scale: 0.85, opacity: 0, y: 30 },
+          { scale: 1.0, opacity: 1, y: 0, duration: 1.2, ease: "elastic.out(1, 0.75)" },
+          1.2
+        );
+
+        tl.fromTo("#b5_features",
+          { opacity: 0, y: 20 },
+          { opacity: 1, y: 0, duration: 1.0, ease: "power2.out" },
+          2.0
+        );
+
+        tl.to("#b5_url_card", {
+          boxShadow: "0 25px 80px rgba(16, 185, 129, 0.65)",
+          repeat: 3,
+          yoyo: true,
+          duration: 1.2,
+          ease: "sine.inOut"
+        }, 3.5);
+
+        window.__timelines = window.__timelines || {};
+        window.__timelines["beat5"] = tl;
+        tl.seek(0);
+      </script>
+    </template>
+  </body>
+</html>

@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        #root {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        .beat2-wrapper {
+          position: relative;
+          width: 1720px;
+          height: 800px;
+          margin-top: 50px;
+        }
+
+        .search-hud {
+          position: absolute;
+          top: 20px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 640px;
+          height: 60px;
+          background: rgba(15, 23, 42, 0.95);
+          border: 2px solid #06b6d4;
+          border-radius: 30px;
+          display: flex;
+          align-items: center;
+          padding: 0 24px;
+          box-shadow: 0 10px 30px rgba(6, 182, 212, 0.3);
+          z-index: 50;
+        }
+
+        .search-hud-label {
+          color: #94a3b8;
+          font-size: 16px;
+          margin-right: 12px;
+        }
+
+        .search-hud-input {
+          font-size: 22px;
+          font-weight: 700;
+          color: #06b6d4;
+          letter-spacing: 0.03em;
+        }
+
+        .face-zoom-viewport {
+          position: absolute;
+          top: 100px;
+          left: 60px;
+          right: 60px;
+          height: 640px;
+          border-radius: 20px;
+          border: 2px solid rgba(14, 165, 233, 0.4);
+          overflow: hidden;
+          background: #000;
+        }
+
+        .face-zoom-img {
+          position: absolute;
+          width: 3800px;
+          height: auto;
+          left: -1200px;
+          top: -650px;
+        }
+
+        .target-reticle {
+          position: absolute;
+          width: 140px;
+          height: 140px;
+          border-radius: 50%;
+          border: 3px solid #f59e0b;
+          box-shadow: 0 0 35px rgba(245, 158, 11, 0.8), inset 0 0 20px rgba(245, 158, 11, 0.4);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          pointer-events: none;
+        }
+
+        .target-name-tag {
+          position: absolute;
+          bottom: -46px;
+          background: rgba(15, 23, 42, 0.95);
+          border: 1px solid #f59e0b;
+          color: #ffffff;
+          font-size: 18px;
+          font-weight: 700;
+          padding: 6px 16px;
+          border-radius: 8px;
+          white-space: nowrap;
+          box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+        }
+
+        .fidelity-stamp {
+          position: absolute;
+          top: 120px;
+          right: 80px;
+          background: rgba(16, 185, 129, 0.9);
+          border: 2px solid #34d399;
+          color: #ffffff;
+          padding: 14px 24px;
+          border-radius: 12px;
+          font-size: 17px;
+          font-weight: 700;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          box-shadow: 0 10px 25px rgba(16, 185, 129, 0.4);
+          z-index: 40;
+        }
+
+        .fidelity-stamp small {
+          font-size: 13px;
+          opacity: 0.9;
+          font-weight: 400;
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="beat2"
+        data-width="1920"
+        data-height="1080"
+      >
+        <div class="beat2-wrapper">
+          <div class="search-hud" id="b2_search">
+            <span class="search-hud-label">Find Batchmate:</span>
+            <span class="search-hud-input" id="b2_typed_name">Tiwari</span>
+          </div>
+
+          <div class="fidelity-stamp" id="b2_fidelity">
+            <span>100% Silver-Halide Grain</span>
+            <small>Zero AI Distortion • Pure Original Pixels</small>
+          </div>
+
+          <div class="face-zoom-viewport" id="b2_viewport" data-layout-allow-overflow>
+            <img
+              id="b2_zoom_photo"
+              class="face-zoom-img"
+              data-layout-allow-overflow
+              src="assets/photo_deskewed.jpg"
+              alt="Zoomed Photo"
+            />
+            <div class="target-reticle" id="b2_reticle">
+              <div class="target-name-tag" id="b2_reticle_name">Tiwari</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        const tl = gsap.timeline({ paused: true });
+
+        tl.fromTo("#b2_search",
+          { y: -40, opacity: 0 },
+          { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" },
+          0.2
+        );
+
+        tl.fromTo("#b2_fidelity",
+          { x: 50, opacity: 0 },
+          { x: 0, opacity: 1, duration: 0.8, ease: "power3.out" },
+          0.5
+        );
+
+        // Target 1: Tiwari (sitting row, center-left)
+        tl.set("#b2_typed_name", { textContent: "Tiwari" }, 0.8);
+        tl.set("#b2_reticle_name", { textContent: "Tiwari" }, 0.8);
+        tl.fromTo("#b2_zoom_photo",
+          { x: -1100, y: -500, scale: 1.6 },
+          { x: -1250, y: -580, scale: 2.2, duration: 1.6, ease: "power3.inOut" },
+          0.8
+        );
+        tl.fromTo("#b2_reticle",
+          { x: 740, y: 280, scale: 2.0, opacity: 0 },
+          { x: 740, y: 280, scale: 1.0, opacity: 1, duration: 0.8, ease: "back.out(2.0)" },
+          1.2
+        );
+
+        // Target 2: Agrawal (standing row 2)
+        tl.set("#b2_typed_name", { textContent: "Agrawal" }, 5.2);
+        tl.set("#b2_reticle_name", { textContent: "Agrawal" }, 5.2);
+        tl.to("#b2_zoom_photo",
+          { x: -850, y: -460, scale: 2.3, duration: 1.5, ease: "power2.inOut" },
+          5.2
+        );
+        tl.to("#b2_reticle",
+          { x: 620, y: 240, duration: 1.5, ease: "power2.inOut" },
+          5.2
+        );
+
+        // Target 3: Sinha (standing row 3)
+        tl.set("#b2_typed_name", { textContent: "Sinha" }, 9.2);
+        tl.set("#b2_reticle_name", { textContent: "Sinha" }, 9.2);
+        tl.to("#b2_zoom_photo",
+          { x: -1600, y: -420, scale: 2.4, duration: 1.5, ease: "power2.inOut" },
+          9.2
+        );
+        tl.to("#b2_reticle",
+          { x: 880, y: 220, duration: 1.5, ease: "power2.inOut" },
+          9.2
+        );
+
+        window.__timelines = window.__timelines || {};
+        window.__timelines["beat2"] = tl;
+        tl.seek(0);
+      </script>
+    </template>
+  </body>
+</html>

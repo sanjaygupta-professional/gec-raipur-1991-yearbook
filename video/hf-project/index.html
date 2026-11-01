@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <title>GEC Raipur 1991 Mechanical Yearbook 60s Video</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <style>
+      :root {
+        --navy-bg: #070d19;
+        --navy-panel: rgba(13, 25, 48, 0.88);
+        --gold: #f59e0b;
+        --gold-bright: #fbbf24;
+        --white: #ffffff;
+        --border-glass: rgba(56, 189, 248, 0.25);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html, body {
+        margin: 0;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: var(--navy-bg);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        color: var(--white);
+      }
+
+      #root {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: radial-gradient(circle at 50% 30%, #0f2342 0%, #060b14 100%);
+      }
+
+      .blueprint-grid {
+        position: absolute;
+        inset: 0;
+        background-image: 
+          linear-gradient(to right, rgba(14, 165, 233, 0.08) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(14, 165, 233, 0.08) 1px, transparent 1px);
+        background-size: 60px 60px;
+        pointer-events: none;
+      }
+
+      audio {
+        display: none;
+      }
+
+      /* Global Header Navigation */
+      .top-nav {
+        position: absolute;
+        top: 24px;
+        left: 60px;
+        right: 60px;
+        height: 70px;
+        background: var(--navy-panel);
+        border: 1px solid var(--border-glass);
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 32px;
+        box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+        z-index: 100;
+      }
+
+      .logo-group {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+
+      .college-badge {
+        width: 44px;
+        height: 44px;
+        background: linear-gradient(135deg, #d97706, #f59e0b);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 900;
+        font-size: 20px;
+        color: #111827;
+        box-shadow: 0 0 20px rgba(245, 158, 11, 0.5);
+      }
+
+      .college-title {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .college-title .primary {
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        color: var(--white);
+      }
+
+      .college-title .secondary {
+        font-size: 13px;
+        color: var(--gold);
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: 600;
+      }
+
+      .header-pills {
+        display: flex;
+        gap: 12px;
+      }
+
+      .pill {
+        padding: 6px 16px;
+        border-radius: 20px;
+        font-size: 13px;
+        font-weight: 600;
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        color: #cbd5e1;
+      }
+
+      .pill.live {
+        background: rgba(16, 185, 129, 0.15);
+        border-color: #10b981;
+        color: #34d399;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .pill.live .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #10b981;
+        box-shadow: 0 0 10px #10b981;
+      }
+
+      /* Dynamic Kinetic Subtitle Dock at Bottom */
+      .subtitle-dock {
+        position: absolute;
+        bottom: 28px;
+        left: 120px;
+        right: 120px;
+        height: 84px;
+        background: rgba(8, 15, 30, 0.92);
+        border: 1px solid rgba(245, 158, 11, 0.4);
+        border-radius: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 40px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+        z-index: 200;
+      }
+
+      .subtitle-text {
+        font-size: 26px;
+        font-weight: 600;
+        color: #f8fafc;
+        text-align: center;
+        letter-spacing: 0.01em;
+        line-height: 1.3;
+      }
+
+      .subtitle-highlight {
+        color: var(--gold-bright);
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Root Composition -->
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="70"
+      data-width="1920"
+      data-height="1080"
+    >
+      <div class="blueprint-grid"></div>
+
+      <!-- Persistent Top Navigation Bar -->
+      <nav class="top-nav">
+        <div class="logo-group">
+          <div class="college-badge">91</div>
+          <div class="college-title">
+            <span class="primary">Govt Engineering College Raipur</span>
+            <span class="secondary">Mechanical Engineering • 1991 Reunion Edition</span>
+          </div>
+        </div>
+        <div class="header-pills">
+          <div class="pill live"><span class="dot"></span> Live on Cloudflare</div>
+          <div class="pill">5 Themes</div>
+          <div class="pill">41 Roster Members</div>
+          <div class="pill">35-Year Timeline</div>
+        </div>
+      </nav>
+
+      <!-- Dynamic Subtitle Dock at Bottom -->
+      <div id="subtitleDock" class="subtitle-dock">
+        <div id="subText" class="subtitle-text">
+          Hey guys, batch of '91! It’s been 35 years since our final year at GEC Raipur.
+        </div>
+      </div>
+
+      <!-- Audio Tracks -->
+      <audio id="audio_bgm" src="assets/bg_music.mp3" data-start="0" data-duration="70"></audio>
+      <audio id="audio_b1" src="assets/beat1.mp3" data-start="0.2" data-duration="13.68"></audio>
+      <audio id="audio_b2" src="assets/beat2.mp3" data-start="14.2" data-duration="13.46"></audio>
+      <audio id="audio_b3" src="assets/beat3.mp3" data-start="28.0" data-duration="13.80"></audio>
+      <audio id="audio_b4" src="assets/beat4.mp3" data-start="42.2" data-duration="12.29"></audio>
+      <audio id="audio_b5" src="assets/beat5.mp3" data-start="55.0" data-duration="13.46"></audio>
+
+      <!-- Sub-Composition Mounts -->
+      <div
+        id="beat1"
+        class="clip"
+        data-composition-id="beat1"
+        data-composition-src="compositions/beat1.html"
+        data-start="0"
+        data-duration="14.2"
+        data-track-index="0"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div
+        id="beat2"
+        class="clip"
+        data-composition-id="beat2"
+        data-composition-src="compositions/beat2.html"
+        data-start="14.2"
+        data-duration="13.8"
+        data-track-index="1"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div
+        id="beat3"
+        class="clip"
+        data-composition-id="beat3"
+        data-composition-src="compositions/beat3.html"
+        data-start="28.0"
+        data-duration="14.2"
+        data-track-index="2"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div
+        id="beat4"
+        class="clip"
+        data-composition-id="beat4"
+        data-composition-src="compositions/beat4.html"
+        data-start="42.2"
+        data-duration="12.8"
+        data-track-index="3"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+
+      <div
+        id="beat5"
+        class="clip"
+        data-composition-id="beat5"
+        data-composition-src="compositions/beat5.html"
+        data-start="55.0"
+        data-duration="15.0"
+        data-track-index="4"
+        data-width="1920"
+        data-height="1080"
+      ></div>
+    </div>
+
+    <!-- Master Host Timeline -->
+    <script>
+      const tl = gsap.timeline({ paused: true });
+
+      // Subtitle updates synced precisely to audio speech
+      tl.set("#subText", {
+        innerHTML: 'Hey guys, batch of \'91! It’s been 35 years since our final year at <span class="subtitle-highlight">GEC Raipur</span>.'
+      }, 0.2);
+
+      tl.set("#subText", {
+        innerHTML: 'Look at us outside the workshop—young, energetic, and terrified of <span class="subtitle-highlight">thermo vivas</span>!'
+      }, 7.0);
+
+      tl.set("#subText", {
+        innerHTML: 'Every grain of this 1991 photo is <span class="subtitle-highlight">100% original and untouched</span>—zero AI face distortion.'
+      }, 14.2);
+
+      tl.set("#subText", {
+        innerHTML: 'Type any surname—<span class="subtitle-highlight">Tiwari, Agrawal, Sinha</span>—and it zooms straight into your face.'
+      }, 20.0);
+
+      tl.set("#subText", {
+        innerHTML: 'Look at the side reels! On the left: the <span class="subtitle-highlight">Carnot cycles and lathe tools</span> we sweated over in college.'
+      }, 28.0);
+
+      tl.set("#subText", {
+        innerHTML: 'On the right: the <span class="subtitle-highlight">robotics, FEA, and space mechanisms</span> we\'ve engineered for 35 years.'
+      }, 35.0);
+
+      tl.set("#subText", {
+        innerHTML: 'Click your face to drop your <span class="subtitle-highlight">2026 city</span> and favorite workshop memory.'
+      }, 42.2);
+
+      tl.set("#subText", {
+        innerHTML: 'Flip into five retro themes—including <span class="subtitle-highlight">AutoCAD R11</span>—and export cards to WhatsApp.'
+      }, 48.5);
+
+      tl.set("#subText", {
+        innerHTML: 'It’s completely private for our batch. Open <span class="subtitle-highlight">gec-raipur-1991.pages.dev</span>!'
+      }, 55.0);
+
+      tl.set("#subText", {
+        innerHTML: 'Find your face, add your story, and let’s celebrate <span class="subtitle-highlight">35 years of Mechanical \'91</span>!'
+      }, 62.0);
+
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

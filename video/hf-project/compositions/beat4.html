@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        #root {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        .beat4-wrapper {
+          position: relative;
+          width: 1720px;
+          height: 820px;
+          margin-top: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 60px;
+        }
+
+        .profile-modal-preview {
+          width: 800px;
+          background: #0f172a;
+          border: 2px solid #f59e0b;
+          border-radius: 20px;
+          padding: 34px;
+          box-shadow: 0 25px 60px rgba(0,0,0,0.8);
+        }
+
+        .modal-header-row {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+          padding-bottom: 16px;
+          margin-bottom: 24px;
+        }
+
+        .modal-name {
+          font-size: 30px;
+          font-weight: 800;
+          color: #ffffff;
+        }
+
+        .modal-roll {
+          font-size: 15px;
+          color: #f59e0b;
+          font-weight: 600;
+        }
+
+        .modal-body-grid {
+          display: flex;
+          gap: 28px;
+        }
+
+        .modal-photo-col {
+          display: flex;
+          flex-direction: column;
+          gap: 14px;
+        }
+
+        .modal-photo-box {
+          width: 210px;
+          height: 145px;
+          background: #1e293b;
+          border-radius: 12px;
+          border: 1px solid rgba(255, 255, 255, 0.15);
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+        }
+
+        .modal-photo-box img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .modal-photo-label {
+          position: absolute;
+          bottom: 6px;
+          left: 6px;
+          background: rgba(0, 0, 0, 0.85);
+          padding: 3px 8px;
+          border-radius: 4px;
+          font-size: 11px;
+          font-weight: 700;
+          color: #cbd5e1;
+        }
+
+        .modal-info-col {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          gap: 18px;
+        }
+
+        .info-field-label {
+          font-size: 13px;
+          color: #94a3b8;
+          text-transform: uppercase;
+          font-weight: 600;
+          margin-bottom: 4px;
+        }
+
+        .info-field-val {
+          font-size: 17px;
+          color: #f1f5f9;
+          font-weight: 600;
+        }
+
+        .whatsapp-export-btn {
+          margin-top: 10px;
+          background: #25d366;
+          color: #064e3b;
+          font-size: 16px;
+          font-weight: 700;
+          padding: 12px 20px;
+          border-radius: 10px;
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+        }
+
+        .theme-cards-stack {
+          width: 640px;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+
+        .theme-showcase-box {
+          height: 150px;
+          border-radius: 14px;
+          padding: 20px 24px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border: 2px solid transparent;
+          box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+        }
+
+        .theme-showcase-box h3 {
+          font-size: 20px;
+          margin-bottom: 4px;
+        }
+
+        .theme-showcase-box p {
+          font-size: 14px;
+          opacity: 0.8;
+        }
+
+        .theme-showcase-box.autocad {
+          background: #000000;
+          border-color: #38bdf8;
+          color: #38bdf8;
+          font-family: monospace;
+        }
+
+        .theme-showcase-box.cinema {
+          background: #261710;
+          border-color: #f59e0b;
+          color: #fef3c7;
+        }
+
+        .theme-showcase-box.blueprint {
+          background: #0a192f;
+          border-color: #0ea5e9;
+          color: #e2e8f0;
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="beat4"
+        data-width="1920"
+        data-height="1080"
+      >
+        <div class="beat4-wrapper">
+          <div class="profile-modal-preview" id="b4_modal">
+            <div class="modal-header-row">
+              <div class="modal-name">Sanjay Gupta</div>
+              <div class="modal-roll">BE Mechanical • Class of '91</div>
+            </div>
+            <div class="modal-body-grid">
+              <div class="modal-photo-col">
+                <div class="modal-photo-box" data-layout-allow-overflow>
+                  <img src="assets/photo_deskewed.jpg" data-layout-allow-overflow alt="1991 Crop" style="object-position: -480px -150px; transform: scale(2.2);" />
+                  <span class="modal-photo-label">1991 GEC</span>
+                </div>
+                <div class="modal-photo-box" data-layout-allow-overflow>
+                  <img src="assets/photo_deskewed.jpg" data-layout-allow-overflow alt="Current Photo" style="object-position: -480px -150px; transform: scale(2.2); filter: sepia(0.3);" />
+                  <span class="modal-photo-label">2026 Update</span>
+                </div>
+              </div>
+              <div class="modal-info-col">
+                <div>
+                  <div class="info-field-label">Current Location (2026)</div>
+                  <div class="info-field-val">Bangalore / Silicon Valley</div>
+                </div>
+                <div>
+                  <div class="info-field-label">Favorite College Memory</div>
+                  <div class="info-field-val">"Midnight thermo cram sessions & casting foundry lab!"</div>
+                </div>
+                <div class="whatsapp-export-btn">
+                  <span>💬 Export Reunion Card to WhatsApp</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="theme-cards-stack" id="b4_themes">
+            <div class="theme-showcase-box autocad" id="b4_t1">
+              <div>
+                <h3>AutoCAD R11 DOS</h3>
+                <p>Amber CRT phosphor • Drafting vectors</p>
+              </div>
+              <span style="font-weight: bold;">[Active]</span>
+            </div>
+            <div class="theme-showcase-box cinema" id="b4_t2">
+              <div>
+                <h3>1991 Bollywood</h3>
+                <p>Vintage sepia ticket & brass accents</p>
+              </div>
+              <span style="font-weight: bold;">[Switch]</span>
+            </div>
+            <div class="theme-showcase-box blueprint" id="b4_t3">
+              <div>
+                <h3>Blueprint Precision</h3>
+                <p>Technical cyan grid & hairline rules</p>
+              </div>
+              <span style="font-weight: bold;">[Switch]</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        const tl = gsap.timeline({ paused: true });
+
+        tl.fromTo("#b4_modal",
+          { scale: 0.88, opacity: 0, y: 30 },
+          { scale: 1.0, opacity: 1, y: 0, duration: 1.0, ease: "power3.out" },
+          0.2
+        );
+
+        tl.fromTo("#b4_t1",
+          { x: 50, opacity: 0 },
+          { x: 0, opacity: 1, duration: 0.8, ease: "power2.out" },
+          0.8
+        );
+
+        tl.fromTo("#b4_t2",
+          { x: 50, opacity: 0 },
+          { x: 0, opacity: 1, duration: 0.8, ease: "power2.out" },
+          1.6
+        );
+
+        tl.fromTo("#b4_t3",
+          { x: 50, opacity: 0 },
+          { x: 0, opacity: 1, duration: 0.8, ease: "power2.out" },
+          2.4
+        );
+
+        // Dynamic theme toggle highlights
+        tl.to("#b4_t1", { scale: 1.05, boxShadow: "0 0 25px rgba(56, 189, 248, 0.6)", duration: 0.6 }, 4.5);
+        tl.to("#b4_t1", { scale: 1.0, boxShadow: "none", duration: 0.4 }, 6.5);
+        tl.to("#b4_t2", { scale: 1.05, boxShadow: "0 0 25px rgba(245, 158, 11, 0.6)", duration: 0.6 }, 6.8);
+
+        window.__timelines = window.__timelines || {};
+        window.__timelines["beat4"] = tl;
+        tl.seek(0);
+      </script>
+    </template>
+  </body>
+</html>

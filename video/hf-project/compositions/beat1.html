@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        #root {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        .beat1-wrapper {
+          position: relative;
+          width: 1720px;
+          height: 780px;
+          margin-top: 50px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .beat1-title-card {
+          margin-bottom: 20px;
+          text-align: center;
+        }
+
+        .beat1-title-card h1 {
+          font-size: 52px;
+          font-weight: 800;
+          background: linear-gradient(135deg, #ffffff, #93c5fd);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          letter-spacing: -0.02em;
+        }
+
+        .beat1-title-card p {
+          font-size: 22px;
+          color: #f59e0b;
+          margin-top: 6px;
+          font-weight: 600;
+        }
+
+        .photo-frame-1991 {
+          position: relative;
+          width: 1620px;
+          height: 590px;
+          border-radius: 16px;
+          border: 2px solid rgba(245, 158, 11, 0.5);
+          box-shadow: 0 24px 60px rgba(0, 0, 0, 0.7);
+          overflow: hidden;
+          background: #000;
+        }
+
+        .photo-image-1991 {
+          position: absolute;
+          width: 2500px;
+          height: auto;
+          left: -400px;
+          top: -120px;
+        }
+
+        .vintage-badge {
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          background: rgba(0, 0, 0, 0.85);
+          border: 1px solid #f59e0b;
+          padding: 8px 18px;
+          border-radius: 8px;
+          color: #f59e0b;
+          font-size: 15px;
+          font-weight: 700;
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+        }
+
+        .thermo-callout {
+          position: absolute;
+          bottom: 24px;
+          right: 24px;
+          background: rgba(14, 165, 233, 0.95);
+          color: #ffffff;
+          padding: 12px 24px;
+          border-radius: 12px;
+          font-size: 18px;
+          font-weight: 700;
+          box-shadow: 0 8px 24px rgba(14, 165, 233, 0.5);
+        }
+      </style>
+
+      <div
+        id="root"
+        data-composition-id="beat1"
+        data-width="1920"
+        data-height="1080"
+      >
+        <div class="beat1-wrapper">
+          <div class="beat1-title-card" id="b1_title">
+            <h1>35 Years of Friendship & Engineering</h1>
+            <p>Reconnecting the GEC Raipur BE Mechanical Class of 1990-1991</p>
+          </div>
+          <div class="photo-frame-1991" id="b1_frame" data-layout-allow-overflow>
+            <img
+              id="b1_pan_photo"
+              class="photo-image-1991"
+              data-layout-allow-overflow
+              src="assets/photo_deskewed.jpg"
+              alt="1991 Batch Photo"
+            />
+            <div class="vintage-badge">March 1991 • Workshop Front Lawn</div>
+            <div class="thermo-callout" id="b1_thermo">Remember the Thermo Vivas? 📚🔥</div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        const tl = gsap.timeline({ paused: true });
+
+        tl.fromTo("#b1_title", 
+          { y: -30, opacity: 0 }, 
+          { y: 0, opacity: 1, duration: 1.2, ease: "power3.out" }, 
+          0.3
+        );
+
+        tl.fromTo("#b1_frame",
+          { scale: 0.95, opacity: 0 },
+          { scale: 1.0, opacity: 1, duration: 1.2, ease: "power2.out" },
+          0.5
+        );
+
+        // Slow smooth pan across the 1991 panoramic photo
+        tl.fromTo("#b1_pan_photo",
+          { x: 0, scale: 1.0 },
+          { x: -380, scale: 1.08, duration: 13.0, ease: "sine.inOut" },
+          0.5
+        );
+
+        tl.fromTo("#b1_thermo",
+          { scale: 0.8, opacity: 0 },
+          { scale: 1.0, opacity: 1, duration: 0.8, ease: "back.out(1.7)" },
+          7.2
+        );
+
+        window.__timelines = window.__timelines || {};
+        window.__timelines["beat1"] = tl;
+        tl.seek(0);
+      </script>
+    </template>
+  </body>
+</html>
