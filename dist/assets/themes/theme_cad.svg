@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1520 1212" width="1520" height="1212">
+  <defs>
+    <mask id="cadOpeningMask">
+      <rect x="0" y="0" width="1520" height="1212" fill="#ffffff"/>
+      <rect x="160" y="160" width="1200" height="892" fill="#000000"/>
+    </mask>
+  </defs>
+
+  <!-- Dark Slate CAD Workstation Surface -->
+  <rect x="0" y="0" width="1520" height="1212" fill="#0b1015" mask="url(#cadOpeningMask)"/>
+
+  <!-- Outer Workstation Bezel -->
+  <rect x="20" y="20" width="1480" height="1172" fill="none" stroke="#1f2c38" stroke-width="2"/>
+  <rect x="26" y="26" width="1468" height="1160" fill="none" stroke="#00f0ff" stroke-width="0.75" stroke-opacity="0.4"/>
+
+  <!-- Coordinate Ruler (X-Axis) -->
+  <g font-family="'Consolas', monospace">
+    <line x1="160" y1="156" x2="1360" y2="156" stroke="#00f0ff" stroke-width="1.5"/>
+    <line x1="160" y1="156" x2="160" y2="142" stroke="#00f0ff" stroke-width="1"/>
+    <text x="160" y="138" font-size="9" fill="#00f0ff" text-anchor="middle">0</text>
+    <line x1="180" y1="156" x2="180" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="200" y1="156" x2="200" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="220" y1="156" x2="220" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="240" y1="156" x2="240" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="260" y1="156" x2="260" y2="142" stroke="#00f0ff" stroke-width="1"/>
+    <text x="260" y="138" font-size="9" fill="#00f0ff" text-anchor="middle">100</text>
+    <line x1="280" y1="156" x2="280" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="300" y1="156" x2="300" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="320" y1="156" x2="320" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="340" y1="156" x2="340" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="360" y1="156" x2="360" y2="142" stroke="#00f0ff" stroke-width="1"/>
+    <text x="360" y="138" font-size="9" fill="#00f0ff" text-anchor="middle">200</text>
+    <line x1="380" y1="156" x2="380" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="400" y1="156" x2="400" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="420" y1="156" x2="420" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="440" y1="156" x2="440" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="460" y1="156" x2="460" y2="142" stroke="#00f0ff" stroke-width="1"/>
+    <text x="460" y="138" font-size="9" fill="#00f0ff" text-anchor="middle">300</text>
+    <line x1="480" y1="156" x2="480" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="500" y1="156" x2="500" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="520" y1="156" x2="520" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="540" y1="156" x2="540" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="560" y1="156" x2="560" y2="142" stroke="#00f0ff" stroke-width="1"/>
+    <text x="560" y="138" font-size="9" fill="#00f0ff" text-anchor="middle">400</text>
+    <line x1="580" y1="156" x2="580" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="600" y1="156" x2="600" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="620" y1="156" x2="620" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="640" y1="156" x2="640" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="660" y1="156" x2="660" y2="142" stroke="#00f0ff" stroke-width="1"/>
+    <text x="660" y="138" font-size="9" fill="#00f0ff" text-anchor="middle">500</text>
+    <line x1="680" y1="156" x2="680" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="700" y1="156" x2="700" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="720" y1="156" x2="720" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="740" y1="156" x2="740" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="760" y1="156" x2="760" y2="142" stroke="#00f0ff" stroke-width="1"/>
+    <text x="760" y="138" font-size="9" fill="#00f0ff" text-anchor="middle">600</text>
+    <line x1="780" y1="156" x2="780" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="800" y1="156" x2="800" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="820" y1="156" x2="820" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="840" y1="156" x2="840" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="860" y1="156" x2="860" y2="142" stroke="#00f0ff" stroke-width="1"/>
+    <text x="860" y="138" font-size="9" fill="#00f0ff" text-anchor="middle">700</text>
+    <line x1="880" y1="156" x2="880" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="900" y1="156" x2="900" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="920" y1="156" x2="920" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="940" y1="156" x2="940" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="960" y1="156" x2="960" y2="142" stroke="#00f0ff" stroke-width="1"/>
+    <text x="960" y="138" font-size="9" fill="#00f0ff" text-anchor="middle">800</text>
+    <line x1="980" y1="156" x2="980" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="1000" y1="156" x2="1000" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="1020" y1="156" x2="1020" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="1040" y1="156" x2="1040" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="1060" y1="156" x2="1060" y2="142" stroke="#00f0ff" stroke-width="1"/>
+    <text x="1060" y="138" font-size="9" fill="#00f0ff" text-anchor="middle">900</text>
+    <line x1="1080" y1="156" x2="1080" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="1100" y1="156" x2="1100" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="1120" y1="156" x2="1120" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="1140" y1="156" x2="1140" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="1160" y1="156" x2="1160" y2="142" stroke="#00f0ff" stroke-width="1"/>
+    <text x="1160" y="138" font-size="9" fill="#00f0ff" text-anchor="middle">1000</text>
+    <line x1="1180" y1="156" x2="1180" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="1200" y1="156" x2="1200" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="1220" y1="156" x2="1220" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="1240" y1="156" x2="1240" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="1260" y1="156" x2="1260" y2="142" stroke="#00f0ff" stroke-width="1"/>
+    <text x="1260" y="138" font-size="9" fill="#00f0ff" text-anchor="middle">1100</text>
+    <line x1="1280" y1="156" x2="1280" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="1300" y1="156" x2="1300" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="1320" y1="156" x2="1320" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="1340" y1="156" x2="1340" y2="152" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="1360" y1="156" x2="1360" y2="142" stroke="#00f0ff" stroke-width="1"/>
+    <text x="1360" y="138" font-size="9" fill="#00f0ff" text-anchor="middle">1200</text>
+  </g>
+
+  <!-- Photo Opening CAD Viewport Frame -->
+  <rect x="158" y="158" width="1204" height="896" fill="none" stroke="#00f0ff" stroke-width="2"/>
+  <rect x="159" y="159" width="1202" height="894" fill="none" stroke="#ffb703" stroke-width="0.8"/>
+
+  <!-- Top CAD Application Title & Telemetry Header -->
+  <g font-family="'Consolas', 'Courier New', monospace" fill="#ffffff" transform="translate(160, 65)">
+    <rect x="0" y="0" width="1200" height="42" fill="#141e28" stroke="#00f0ff" stroke-width="1"/>
+    <text x="16" y="26" font-size="15" font-weight="700" fill="#00f0ff">AUTOCAD R11 (1991) — [GECO91_MECH.DWG]</text>
+    <text x="560" y="26" font-size="12" fill="#ffb703">VIEW: ORTHO 2D</text>
+    <text x="730" y="26" font-size="12" fill="#8ecae6">LAYER: 0_PEOPLE (67 NODES)</text>
+    <text x="1000" y="26" font-size="12" fill="#06d6a0">SNAP: ON  GRID: ON</text>
+  </g>
+
+  <!-- Bottom CAD Terminal / Command Prompt -->
+  <g font-family="'Consolas', 'Courier New', monospace" transform="translate(160, 1070)">
+    <rect x="0" y="0" width="1200" height="95" fill="#05080b" stroke="#00f0ff" stroke-width="1.5"/>
+    <text x="16" y="26" font-size="13" fill="#8ecae6">Command: _OPEN "GEC_RAIPUR_MECH_1990_1991.DWG"</text>
+    <text x="16" y="48" font-size="13" fill="#8ecae6">Command: _ZOOM _ALL &gt; Regenerating drawing... 67 entities located.</text>
+    <text x="16" y="70" font-size="13" fill="#06d6a0" font-weight="700">Command: _STATUS &gt; FACIAL GEOMETRY LOCKED (100% UNTOUCHED OPTICAL PIXELS)</text>
+    <text x="16" y="88" font-size="13" fill="#00f0ff">Command: <tspan fill="#ffffff">_SPOTLIGHT "SANJAY GUPTA"</tspan> <tspan fill="#00f0ff">_</tspan></text>
+  </g>
+</svg>

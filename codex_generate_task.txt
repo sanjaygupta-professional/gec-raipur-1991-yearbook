@@ -1,0 +1,19 @@
+# Task: Build the 5 Distinct Theme Mats & Frames for GEC Raipur 1991 Living Yearbook
+
+You previously reviewed and ranked the TOP 5 styles:
+1. Archival Silver-Gelatin
+2. Mechanical Blueprint (with official engineering title block: GECR-ME-1991-01, Scale 1:1, etc.)
+3. 1991 35mm Contact Sheet (Kodak Tri-X 400 film sprockets, frame #35A/36, grease pencil marks)
+4. 1991 Retro Bollywood Cinema Title Card (Vintage 1991 cinema marquee border, "यादें 1991", golden filigree)
+5. AutoCAD R11 / Engineer Slate (Coordinate axes, CAD status bar, vector drafting frame)
+
+Please write a Python script `generate_style_assets.py` (using Pillow or svgwrite or pure Python image/SVG synthesis) that generates the SVG/PNG frame overlays and mat borders for all 5 styles.
+The master photograph dimensions are 1200 x 892.
+
+Requirements:
+1. Each style must have a dedicated frame SVG or composite image overlay that wraps the 1200x892 photo canvas seamlessly.
+2. The central 1200x892 photo area must remain 100% transparent or visible with zero distortion to faces.
+3. All design elements (title blocks, sprockets, borders, filigree, coordinate rulers) must be sharp, authentic, and beautiful.
+4. Save the generated asset files into `assets/themes/`.
+
+Write the complete working script and execute it to verify all 5 assets are generated cleanly.

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1520 1212" width="1520" height="1212">
+  <defs>
+    <linearGradient id="cinemaVelvet" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#360a14"/>
+      <stop offset="50%" stop-color="#1f040b"/>
+      <stop offset="100%" stop-color="#120106"/>
+    </linearGradient>
+    <linearGradient id="goldMarquee" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d4af37"/>
+      <stop offset="25%" stop-color="#fff2a8"/>
+      <stop offset="50%" stop-color="#d4af37"/>
+      <stop offset="75%" stop-color="#fff2a8"/>
+      <stop offset="100%" stop-color="#d4af37"/>
+    </linearGradient>
+    <mask id="cinemaOpeningMask">
+      <rect x="0" y="0" width="1520" height="1212" fill="#ffffff"/>
+      <rect x="160" y="160" width="1200" height="892" fill="#000000"/>
+    </mask>
+  </defs>
+
+  <!-- Royal Velvet Marquee Background -->
+  <rect x="0" y="0" width="1520" height="1212" fill="url(#cinemaVelvet)" mask="url(#cinemaOpeningMask)"/>
+
+  <!-- Ornate Golden Borders -->
+  <rect x="25" y="25" width="1470" height="1162" fill="none" stroke="url(#goldMarquee)" stroke-width="4"/>
+  <rect x="35" y="35" width="1450" height="1142" fill="none" stroke="#d4af37" stroke-width="1" stroke-dasharray="12 6"/>
+
+  <!-- Cinema Corner Flourishes -->
+  <g stroke="#d4af37" stroke-width="2" fill="none">
+    <path d="M 45 75 Q 75 75 75 45 M 45 85 Q 85 85 85 45"/>
+    <path d="M 1475 75 Q 1445 75 1445 45 M 1475 85 Q 1435 85 1435 45"/>
+    <path d="M 45 1137 Q 75 1137 75 1167 M 45 1127 Q 85 1127 85 1167"/>
+    <path d="M 1475 1137 Q 1445 1137 1445 1167 M 1475 1127 Q 1435 1127 1435 1167"/>
+  </g>
+
+  <!-- Photo Opening Golden Inner Frame -->
+  <rect x="156" y="156" width="1208" height="900" fill="none" stroke="url(#goldMarquee)" stroke-width="4"/>
+
+  <!-- Top Cinema Header -->
+  <g text-anchor="middle">
+    <!-- Hindi & English Cinema Marquee -->
+    <text x="760.0" y="78" font-family="'Yatra One', 'Arial Black', sans-serif" font-size="34" font-weight="900" fill="url(#goldMarquee)" letter-spacing="4">★ यादें 1991 ★</text>
+    <text x="760.0" y="115" font-family="'Cinzel', 'Georgia', serif" font-size="18" font-weight="700" fill="#ffffff" letter-spacing="5">GEC RAIPUR MECHANICAL PRESENTS : THE CLASS OF 1991</text>
+    <text x="760.0" y="142" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#ffd166" letter-spacing="3">35 YEARS OF BROTHERHOOD &amp; MEMORIES</text>
+  </g>
+
+  <!-- Bottom Cinema Credits Block -->
+  <g text-anchor="middle" font-family="'Inter', sans-serif" transform="translate(0, 1077)">
+    <!-- Star divider -->
+    <text x="760.0" y="20" font-size="14" fill="#ffd166">★ ★ ★ 35th JUBILEE EDITION ★ ★ ★</text>
+
+    <!-- Retro Movie Billing -->
+    <text x="760.0" y="52" font-size="16" font-weight="700" fill="#ffffff" letter-spacing="2">STARRING: 67 LEGENDS • 15 ESTEEMED PROFESSORS • 52 ENGINEERS</text>
+    <text x="760.0" y="78" font-size="13" font-weight="500" fill="#e0a96d" letter-spacing="1.5">LOCATION: RAIPUR, M.P. • PRODUCED BY: TIMELESS FRIENDSHIP • RUNTIME: FOREVER</text>
+  </g>
+</svg>

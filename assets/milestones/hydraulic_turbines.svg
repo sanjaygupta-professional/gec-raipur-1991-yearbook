@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="100%" height="100%">
+  <rect width="320" height="220" fill="#0A1628" rx="8"/>
+  <!-- High pressure nozzle -->
+  <path d="M 30 100 L 75 105 L 75 115 L 30 120 Z" fill="#4A6572" stroke="#8BA9C4" stroke-width="1.5"/>
+  <!-- Water jet -->
+  <rect x="75" y="108" width="60" height="4" fill="#22D3EE"/>
+  <!-- Pelton bucket -->
+  <path d="M 135 75 Q 160 110 135 145 Q 150 110 135 75 Z" fill="rgba(232, 163, 23, 0.2)" stroke="#E8A317" stroke-width="2"/>
+  <!-- Splitter wedge -->
+  <polygon points="135,110 148,105 148,115" fill="#E8A317"/>
+  <!-- Deflected jet streams -->
+  <path d="M 145 105 Q 165 85 130 65" fill="none" stroke="#22D3EE" stroke-width="2"/>
+  <path d="M 145 115 Q 165 135 130 155" fill="none" stroke="#22D3EE" stroke-width="2"/>
+  <!-- Velocity vectors -->
+  <text x="65" y="98" fill="#22D3EE" font-family="monospace" font-size="11">V_1 (Jet)</text>
+  <text x="180" y="80" fill="#F4F6F9" font-family="monospace" font-size="11">V_r1</text>
+  <text x="180" y="145" fill="#E8A317" font-family="monospace" font-size="11">u (Bucket Speed)</text>
+  <text x="50" y="195" fill="#68B2F8" font-family="monospace" font-size="11">Pelton Impulse: P = ρQ·u·(V_1 - u)(1 + k·cos β)</text>
+</svg>

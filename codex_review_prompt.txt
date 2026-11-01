@@ -1,0 +1,27 @@
+You are an expert design, art direction, and alumni product reviewer.
+You are reviewing styling options for a 35th-year reunion web application:
+Project: GEC Raipur (now NIT Raipur) B.E. Mechanical Engineering, Class of 1990-1991 Living Yearbook.
+Context:
+- 67 individuals: 15 seated faculty & dignitaries (including Principal Dr. H. A. Vachhani, HOD Prof. G. S. Verma, Miss S. L. Sinha) and 52 students in 3 standing rows.
+- Current age of batchmates: ~55-58 years old.
+- The photo was taken in 1991 on black & white film with paper mount.
+- Core non-negotiable constraint: ZERO FACIAL DISTORTION. Alumni hate when AI restylers alter facial shapes, hallucinate teeth, or make people unrecognizable. The underlying facial geometry and optical recognizability must remain 100% faithful.
+- Context of use: Alumni viewing on phones/laptops and sharing on batch WhatsApp groups.
+
+The team has proposed 8 styling options to pre-render as alternate viewing modes:
+1. Mechanical Blueprint / Cyanotype (Deep Prussian blue, drafting lines, engineering drawing border, technical typography)
+2. 1991 Kodachrome / 35mm Vintage Color Film (Realistic warm late-80s/early-90s film aesthetic, natural skin tones, nostalgic film grain)
+3. 19th-Century Sepia & Silver Gelatin (Warm chocolate/sepia archive print, deckled edges, archival university heirloom look)
+4. Renaissance Charcoal & Gouache Etching (Artistic hand-drawn hatching, textured cotton paper)
+5. 1991 Retro Bollywood / Hand-Painted Cinema Poster (Celebratory vibrant palette inspired by 1990-1991 cinema era like Dil/Aashiqui/Hum, retro banner)
+6. Vintage Comic / Halftone Pop Art (Ben-Day dots, newsprint texture, pop art ink outlines)
+7. CAD Wireframe / "Engineer HUD" Mode (Dark slate screen, vector contour lines, AutoCAD R11/caliper overlay)
+8. "Class of 2091" Cyberpunk Centenary (Neon rim lighting, futuristic sci-fi aesthetic)
+
+Please evaluate these options critically based on:
+1. Facial recognizability & integrity (respecting real faces and senior professors).
+2. Emotional connection for 1991 Indian Mechanical Engineering graduates.
+3. WhatsApp shareability and delight factor across the batch.
+4. Implementation feasibility & dignity (avoiding cheap/gimmicky filters).
+
+Recommend the definitive TOP 5 styles in ranked order with your rationale, and note any key design pitfalls to avoid for each.

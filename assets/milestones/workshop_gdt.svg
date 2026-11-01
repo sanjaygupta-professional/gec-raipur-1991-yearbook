@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="100%" height="100%">
+  <rect width="320" height="220" fill="#0A1628" rx="8"/>
+  <!-- 3-jaw chuck -->
+  <rect x="35" y="60" width="40" height="100" fill="#36454F" stroke="#8BA9C4" stroke-width="2"/>
+  <rect x="75" y="75" width="12" height="70" fill="#4A6572"/>
+  <!-- Turned workpiece -->
+  <rect x="87" y="85" width="80" height="50" fill="rgba(104, 178, 248, 0.2)" stroke="#68B2F8" stroke-width="2"/>
+  <rect x="167" y="95" width="70" height="30" fill="rgba(104, 178, 248, 0.3)" stroke="#68B2F8" stroke-width="2"/>
+  <!-- Tool bit -->
+  <polygon points="167,135 180,165 155,165" fill="#E8A317" stroke="#F4F6F9" stroke-width="1.5"/>
+  <!-- Chip curl -->
+  <path d="M 167 130 Q 175 120 185 125" fill="none" stroke="#F2A08C" stroke-width="2"/>
+  <text x="145" y="185" fill="#E8A317" font-family="monospace" font-size="11">HSS Tool</text>
+  <!-- GD&T Callout box -->
+  <rect x="180" y="45" width="105" height="25" fill="#162C4D" stroke="#22D3EE" stroke-width="1.5"/>
+  <text x="188" y="62" fill="#22D3EE" font-family="monospace" font-size="11">⌀25 H7 / g6 [⌖]</text>
+  <text x="50" y="205" fill="#8BA9C4" font-family="monospace" font-size="11">Engine Lathe Workshop Turning</text>
+</svg>

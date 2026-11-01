@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="100%" height="100%">
+  <rect width="320" height="220" fill="#0A1628" rx="8"/>
+  <!-- Outer fin frame -->
+  <polygon points="70,40 250,40 230,170 90,170" fill="rgba(232, 163, 23, 0.1)" stroke="#E8A317" stroke-width="2.5"/>
+  <!-- Internal grid lattice -->
+  <line x1="110" y1="40" x2="120" y2="170" stroke="#8BA9C4" stroke-width="1.5"/>
+  <line x1="150" y1="40" x2="155" y2="170" stroke="#8BA9C4" stroke-width="1.5"/>
+  <line x1="190" y1="40" x2="190" y2="170" stroke="#8BA9C4" stroke-width="1.5"/>
+  <line x1="75" y1="70" x2="245" y2="70" stroke="#8BA9C4" stroke-width="1.5"/>
+  <line x1="80" y1="105" x2="240" y2="105" stroke="#8BA9C4" stroke-width="1.5"/>
+  <line x1="85" y1="140" x2="235" y2="140" stroke="#8BA9C4" stroke-width="1.5"/>
+  <!-- Actuator hinge -->
+  <circle cx="160" cy="40" r="7" fill="#22D3EE"/>
+  <line x1="160" y1="15" x2="160" y2="40" stroke="#22D3EE" stroke-width="3"/>
+  <text x="175" y="25" fill="#22D3EE" font-family="monospace" font-size="11">Torque Shaft</text>
+  <text x="45" y="195" fill="#E8A317" font-family="monospace" font-size="11">Titanium Hypersonic Reentry Grid Fin</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="100%" height="100%">
+  <rect width="320" height="220" fill="#0A1628" rx="8"/>
+  <!-- Outer circular spline (rigid, round) -->
+  <circle cx="160" cy="110" r="70" fill="none" stroke="#68B2F8" stroke-width="3"/>
+  <!-- Flexspline (elliptically deflected) -->
+  <ellipse cx="160" cy="110" rx="66" ry="54" fill="rgba(34, 211, 238, 0.15)" stroke="#22D3EE" stroke-width="2.5"/>
+  <!-- Elliptical wave generator -->
+  <ellipse cx="160" cy="110" rx="48" ry="36" fill="#162C4D" stroke="#E8A317" stroke-width="2"/>
+  <!-- Central input hub -->
+  <circle cx="160" cy="110" r="12" fill="#E8A317"/>
+  <!-- Meshing zone indicators at major axis -->
+  <circle cx="94" cy="110" r="4" fill="#F2A08C"/>
+  <circle cx="226" cy="110" r="4" fill="#F2A08C"/>
+  <text x="232" y="114" fill="#F2A08C" font-family="monospace" font-size="10">Mesh Pt</text>
+  <text x="50" y="195" fill="#22D3EE" font-family="monospace" font-size="11">Zero-Backlash Strain Wave Gear (100:1)</text>
+</svg>

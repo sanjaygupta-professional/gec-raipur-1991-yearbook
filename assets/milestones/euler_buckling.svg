@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="100%" height="100%">
+  <rect width="320" height="220" fill="#0A1628" rx="8"/>
+  <!-- Supports -->
+  <circle cx="160" cy="35" r="6" fill="#8BA9C4"/>
+  <circle cx="160" cy="185" r="6" fill="#8BA9C4"/>
+  <!-- Deflected column -->
+  <line x1="160" y1="35" x2="160" y2="185" stroke="#4A6572" stroke-dasharray="3,3" stroke-width="1.5"/>
+  <path d="M 160 35 Q 225 110 160 185" fill="none" stroke="#22D3EE" stroke-width="3"/>
+  <!-- Load vectors -->
+  <line x1="160" y1="10" x2="160" y2="28" stroke="#F2A08C" stroke-width="2.5"/>
+  <polygon points="156,28 160,34 164,28" fill="#F2A08C"/>
+  <text x="170" y="24" fill="#F2A08C" font-family="monospace" font-size="12" font-weight="bold">P_cr</text>
+  <line x1="160" y1="210" x2="160" y2="192" stroke="#F2A08C" stroke-width="2.5"/>
+  <polygon points="156,192 160,186 164,192" fill="#F2A08C"/>
+  <text x="170" y="208" fill="#F2A08C" font-family="monospace" font-size="12" font-weight="bold">P_cr</text>
+  <!-- Deflection dimension -->
+  <line x1="160" y1="110" x2="225" y2="110" stroke="#E8A317" stroke-width="1.5"/>
+  <text x="180" y="105" fill="#E8A317" font-family="monospace" font-size="11">δ_max</text>
+  <text x="40" y="115" fill="#8BA9C4" font-family="monospace" font-size="11">L (Length)</text>
+  <text x="80" y="170" fill="#22D3EE" font-family="monospace" font-size="11">P_cr = π²EI / (KL)²</text>
+</svg>

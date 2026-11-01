@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="100%" height="100%">
+  <rect width="320" height="220" fill="#0A1628" rx="8"/>
+  <line x1="30" y1="110" x2="290" y2="110" stroke="#4A6572" stroke-width="2"/>
+  <line x1="160" y1="20" x2="160" y2="200" stroke="#4A6572" stroke-width="2"/>
+  <text x="275" y="105" fill="#8BA9C4" font-family="monospace" font-size="12">σ</text>
+  <text x="165" y="32" fill="#8BA9C4" font-family="monospace" font-size="12">τ</text>
+  <!-- Mohr's circle -->
+  <circle cx="170" cy="110" r="65" fill="rgba(232, 163, 23, 0.1)" stroke="#E8A317" stroke-width="2.5"/>
+  <circle cx="170" cy="110" r="3" fill="#F4F6F9"/>
+  <!-- Diameter line -->
+  <line x1="125" y1="65" x2="215" y2="155" stroke="#22D3EE" stroke-width="1.8"/>
+  <circle cx="125" cy="65" r="4" fill="#22D3EE"/>
+  <circle cx="215" cy="155" r="4" fill="#22D3EE"/>
+  <!-- Labels -->
+  <text x="105" y="125" fill="#F4F6F9" font-family="monospace" font-size="11">σ_2</text>
+  <text x="238" y="125" fill="#F4F6F9" font-family="monospace" font-size="11">σ_1</text>
+  <line x1="170" y1="110" x2="170" y2="45" stroke="#F2A08C" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <text x="175" y="55" fill="#F2A08C" font-family="monospace" font-size="11" font-weight="bold">τ_max</text>
+  <text x="50" y="205" fill="#E8A317" font-family="monospace" font-size="11">Principal Stresses &amp; Shear Planes</text>
+</svg>

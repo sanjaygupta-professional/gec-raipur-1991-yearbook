@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="100%" height="100%">
+  <rect width="320" height="220" fill="#0A1628" rx="8"/>
+  <!-- Hip joint / chassis -->
+  <rect x="70" y="30" width="60" height="25" fill="#162C4D" stroke="#8BA9C4" stroke-width="2"/>
+  <circle cx="100" cy="45" r="8" fill="#22D3EE"/>
+  <!-- Upper leg link -->
+  <line x1="100" y1="45" x2="170" y2="110" stroke="#22D3EE" stroke-width="4"/>
+  <!-- Knee joint -->
+  <circle cx="170" cy="110" r="9" fill="#E8A317" stroke="#F4F6F9" stroke-width="2"/>
+  <!-- Lower leg link -->
+  <line x1="170" y1="110" x2="130" y2="180" stroke="#22D3EE" stroke-width="3.5"/>
+  <!-- Foot contact pad -->
+  <circle cx="130" cy="180" r="7" fill="#F2A08C"/>
+  <!-- Ground reaction force vector -->
+  <line x1="130" y1="205" x2="130" y2="180" stroke="#F2A08C" stroke-width="2.5"/>
+  <polygon points="126,183 130,175 134,183" fill="#F2A08C"/>
+  <text x="142" y="200" fill="#F2A08C" font-family="monospace" font-size="11">F_ground</text>
+  <!-- Joint angle annotations -->
+  <text x="185" y="105" fill="#E8A317" font-family="monospace" font-size="11">θ_knee</text>
+  <text x="45" y="205" fill="#8BA9C4" font-family="monospace" font-size="10">Inverse Kinematics: τ = J^T(q)·F</text>
+</svg>

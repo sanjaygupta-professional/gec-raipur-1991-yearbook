@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="100%" height="100%">
+  <rect width="320" height="220" fill="#0A1628" rx="8"/>
+  <!-- Octet truss lattice unit cell -->
+  <polygon points="160,35 240,75 160,115 80,75" fill="rgba(104, 178, 248, 0.1)" stroke="#68B2F8" stroke-width="1.8"/>
+  <polygon points="160,115 240,155 160,195 80,155" fill="rgba(104, 178, 248, 0.1)" stroke="#68B2F8" stroke-width="1.8"/>
+  <line x1="80" y1="75" x2="80" y2="155" stroke="#68B2F8" stroke-width="2"/>
+  <line x1="240" y1="75" x2="240" y2="155" stroke="#68B2F8" stroke-width="2"/>
+  <line x1="160" y1="35" x2="160" y2="195" stroke="#E8A317" stroke-width="2"/>
+  <line x1="80" y1="75" x2="240" y2="155" stroke="#22D3EE" stroke-width="1.5"/>
+  <line x1="240" y1="75" x2="80" y2="155" stroke="#22D3EE" stroke-width="1.5"/>
+  <!-- Laser sintering beam -->
+  <line x1="260" y1="20" x2="160" y2="35" stroke="#F2A08C" stroke-width="2.5"/>
+  <circle cx="160" cy="35" r="4" fill="#F2A08C"/>
+  <text x="210" y="25" fill="#F2A08C" font-family="monospace" font-size="11">Laser Beam</text>
+  <text x="45" y="208" fill="#E8A317" font-family="monospace" font-size="11">Direct Metal Laser Sintering (DMLS)</text>
+</svg>

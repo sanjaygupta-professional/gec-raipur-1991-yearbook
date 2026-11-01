@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="100%" height="100%">
+  <rect width="320" height="220" fill="#0A1628" rx="8"/>
+  <!-- Airfoil profile -->
+  <path d="M 50 110 Q 110 80 180 105 Q 110 120 50 110 Z" fill="rgba(232, 163, 23, 0.2)" stroke="#E8A317" stroke-width="2"/>
+  <!-- Incoming streamlines -->
+  <path d="M 20 85 Q 50 85 90 75 Q 140 65 190 75" fill="none" stroke="#68B2F8" stroke-width="1.8"/>
+  <path d="M 20 135 Q 50 135 90 140 Q 140 145 190 135" fill="none" stroke="#68B2F8" stroke-width="1.8"/>
+  <!-- Von Karman vortex shedding in wake -->
+  <circle cx="215" cy="90" r="10" fill="none" stroke="#22D3EE" stroke-width="2" stroke-dasharray="3,2"/>
+  <circle cx="245" cy="120" r="14" fill="none" stroke="#F2A08C" stroke-width="2" stroke-dasharray="3,2"/>
+  <circle cx="280" cy="90" r="18" fill="none" stroke="#22D3EE" stroke-width="2" stroke-dasharray="4,2"/>
+  <text x="205" y="55" fill="#22D3EE" font-family="monospace" font-size="11">Vortex Shedding (St ≈ 0.21)</text>
+  <text x="40" y="195" fill="#E8A317" font-family="monospace" font-size="11">LES Turbulent Boundary Layer Separation</text>
+</svg>

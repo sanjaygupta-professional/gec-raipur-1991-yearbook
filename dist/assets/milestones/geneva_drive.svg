@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="100%" height="100%">
+  <rect width="320" height="220" fill="#0A1628" rx="8"/>
+  <!-- Driven wheel (Maltese Cross with 4 slots) -->
+  <circle cx="195" cy="110" r="55" fill="rgba(104, 178, 248, 0.15)" stroke="#68B2F8" stroke-width="2"/>
+  <path d="M 195 55 L 195 85 M 195 165 L 195 135 M 140 110 L 170 110 M 250 110 L 220 110" stroke="#0A1628" stroke-width="10"/>
+  <path d="M 195 55 L 195 85 M 195 165 L 195 135 M 140 110 L 170 110 M 250 110 L 220 110" stroke="#E8A317" stroke-width="3"/>
+  <circle cx="195" cy="110" r="8" fill="#F4F6F9"/>
+  <!-- Driving disk -->
+  <circle cx="95" cy="110" r="45" fill="none" stroke="#8BA9C4" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <circle cx="95" cy="110" r="6" fill="#8BA9C4"/>
+  <!-- Driving Pin -->
+  <circle cx="140" cy="110" r="6" fill="#22D3EE" stroke="#F4F6F9" stroke-width="1.5"/>
+  <!-- Direction arrows -->
+  <path d="M 85 60 Q 115 65 125 80" fill="none" stroke="#22D3EE" stroke-width="2"/>
+  <polygon points="127,78 128,86 122,82" fill="#22D3EE"/>
+  <text x="35" y="200" fill="#E8A317" font-family="monospace" font-size="12">Geneva Intermittent Drive (90° Index)</text>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="100%" height="100%">
+  <rect width="320" height="220" fill="#0A1628" rx="8"/>
+  <!-- Central proof mass -->
+  <rect x="120" y="60" width="80" height="100" fill="rgba(34, 211, 238, 0.2)" stroke="#22D3EE" stroke-width="2"/>
+  <!-- Moving comb fingers -->
+  <rect x="80" y="75" width="40" height="8" fill="#22D3EE"/>
+  <rect x="80" y="105" width="40" height="8" fill="#22D3EE"/>
+  <rect x="80" y="135" width="40" height="8" fill="#22D3EE"/>
+  <rect x="200" y="75" width="40" height="8" fill="#22D3EE"/>
+  <rect x="200" y="105" width="40" height="8" fill="#22D3EE"/>
+  <rect x="200" y="135" width="40" height="8" fill="#22D3EE"/>
+  <!-- Stationary fingers -->
+  <rect x="60" y="65" width="50" height="6" fill="#E8A317"/>
+  <rect x="60" y="95" width="50" height="6" fill="#E8A317"/>
+  <rect x="60" y="125" width="50" height="6" fill="#E8A317"/>
+  <!-- Micro spring anchor -->
+  <path d="M 160 30 L 160 40 L 150 45 L 170 50 L 150 55 L 160 60" fill="none" stroke="#F4F6F9" stroke-width="2"/>
+  <path d="M 160 190 L 160 180 L 170 175 L 150 170 L 170 165 L 160 160" fill="none" stroke="#F4F6F9" stroke-width="2"/>
+  <text x="35" y="205" fill="#E8A317" font-family="monospace" font-size="11">MEMS Comb-Finger Differential Capacitance</text>
+</svg>

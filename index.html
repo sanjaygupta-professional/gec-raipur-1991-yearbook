@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GEC Raipur 1990-91 | B.E. Mechanical Living Yearbook</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1" defer></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-top-bar">
+      <a href="landing.html" class="back-link">&larr; Return to Overview</a>
+      <div class="header-badge">35th Anniversary Interactive Archive (1991 – 2026)</div>
+      <div class="appearance-switcher" role="radiogroup" aria-label="Appearance Mode">
+        <button class="appearance-pill active" data-mode="blueprint" type="button" title="Blueprint Precision (Industrial Navy & Grid)">Blueprint</button>
+        <button class="appearance-pill" data-mode="heritage" type="button" title="Forged Heritage (Charcoal & Bronze)">Heritage</button>
+        <button class="appearance-pill" data-mode="flow" type="button" title="Flow & Connection (Cyan Network)">Flow</button>
+        <button class="appearance-pill" data-mode="linen" type="button" title="Archival Linen Tone">Linen</button>
+        <button class="appearance-pill" data-mode="dark" type="button" title="Obsidian Darkroom Tone">Dark</button>
+      </div>
+    </div>
+    <h1 class="college-title">Govt. Engineering College Raipur (M. P.)</h1>
+    <h2 class="sub-title">B. E. FINAL YEAR (MECHANICAL) 1990-91</h2>
+    <div class="header-meta">
+      <span>Raipur, Madhya Pradesh (now NIT Raipur)</span>
+      <span>&bull;</span>
+      <span>67 Faculty, Dignitaries &amp; Batchmates</span>
+      <span>&bull;</span>
+      <span class="auth-guarantee"><i class="ph ph-shield-check" aria-hidden="true"></i> 100% Authentic Pixels (Zero AI Distortion)</span>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="app-container">
+
+    <!-- Global Toolbar -->
+    <section class="toolbar">
+      <div class="search-box">
+        <i class="ph ph-magnifying-glass search-icon" aria-hidden="true"></i>
+        <input type="text" id="searchInput" class="search-input" placeholder="Search batchmate or professor (e.g., Sanjay, Jain, Tiwari, Verma)..." autocomplete="off">
+      </div>
+
+      <div class="view-controls">
+        <button id="viewDeskewedBtn" class="control-btn active" title="Leveled rectangular restoration">
+          <i class="ph ph-crop" aria-hidden="true"></i> Deskewed
+        </button>
+        <button id="viewEnhancedBtn" class="control-btn" title="High dynamic range B&W (unsharp mask, zero hallucination)">
+          <i class="ph ph-sliders" aria-hidden="true"></i> Enhanced B&amp;W
+        </button>
+        <button id="viewOriginalBtn" class="control-btn" title="Original physical cardboard mount">
+          <i class="ph ph-file-text" aria-hidden="true"></i> Original Mount
+        </button>
+        <button id="exportDataBtn" class="control-btn" title="Export current alumni profile updates as JSON">
+          <i class="ph ph-download-simple" aria-hidden="true"></i> Export Updates
+        </button>
+      </div>
+    </section>
+
+    <!-- Theme Style Selector (Top 5 Styles Reviewed with Codex) -->
+    <section class="theme-bar-section">
+      <div class="theme-bar-wrap">
+        <span class="theme-bar-title">Presentation Theme:</span>
+        <div class="theme-btn-group" id="themeBtnGroup">
+          <button class="theme-pill active" data-theme="none">Original</button>
+          <button class="theme-pill" data-theme="archival">Archival Silver</button>
+          <button class="theme-pill" data-theme="blueprint">Mechanical Blueprint</button>
+          <button class="theme-pill" data-theme="contactsheet">35mm Contact Sheet</button>
+          <button class="theme-pill" data-theme="cinema">1991 Bollywood Card</button>
+          <button class="theme-pill" data-theme="cad">AutoCAD R11 Slate</button>
+        </div>
+        <button id="downloadShareCardBtn" class="share-card-btn" title="Download high-resolution image to share on WhatsApp">
+          <i class="ph ph-share-network" aria-hidden="true"></i> Export WhatsApp Card
+        </button>
+      </div>
+    </section>
+
+    <!-- Main Interactive Photo Stage -->
+    <section class="stage-wrapper">
+      <div class="stage-header">
+        <span id="stageHint">Click or hover any face to spotlight. Drag to pan, scroll to zoom.</span>
+        <div class="zoom-hud">
+          <button id="toggleReelsBtn" class="hud-btn active" title="Toggle 35-Year Mechanical Reels"><i class="ph ph-film-strip" aria-hidden="true"></i></button>
+          <button id="toggleNamesBtn" class="hud-btn" title="Toggle Name Badges on All Faces"><i class="ph ph-identification-badge" aria-hidden="true"></i></button>
+          <button id="zoomInBtn" class="hud-btn" title="Zoom In">+</button>
+          <button id="zoomOutBtn" class="hud-btn" title="Zoom Out">&minus;</button>
+          <button id="zoomResetBtn" class="hud-btn" title="Reset View"><i class="ph ph-arrow-counter-clockwise" aria-hidden="true"></i></button>
+          <button id="calibrateBtn" class="hud-btn" title="Toggle Coordinate Pin Adjuster"><i class="ph ph-crosshair" aria-hidden="true"></i></button>
+        </div>
+      </div>
+
+      <div class="stage-main-area" id="stageMainArea">
+        <!-- Left Ambient Reel: College Foundations (1987-1991) -->
+        <aside class="ambient-reel ambient-reel-left" id="ambientReelLeft" aria-label="College Engineering Foundations (1987-1991)">
+          <div class="reel-header">
+            <span class="reel-badge">1987–1991</span>
+            <span class="reel-title">Foundations</span>
+          </div>
+          <div class="reel-viewport">
+            <div class="reel-track" id="reelTrackLeft"></div>
+          </div>
+        </aside>
+
+        <div class="photo-viewport" id="viewport">
+          <div class="photo-canvas" id="canvas">
+            <div class="theme-frame-container" id="themeFrameContainer">
+              <img id="themeFrameOverlay" class="theme-frame-overlay" src="" alt="Theme Frame" style="display:none;">
+              <div class="photo-mount-area" id="photoMountArea">
+                <img id="mainPhoto" class="main-image" src="assets/photo_deskewed.jpg" alt="Govt Engineering College Raipur BE Mechanical 1990-91 Batch Photo">
+                <div class="face-hotspots-layer" id="hotspotsLayer"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Ambient Reel: Modern Breakthroughs & Robotics (1991-2026) -->
+        <aside class="ambient-reel ambient-reel-right" id="ambientReelRight" aria-label="Modern Engineering & Robotics (1991-2026)">
+          <div class="reel-header">
+            <span class="reel-badge">1991–2026</span>
+            <span class="reel-title">Breakthroughs</span>
+          </div>
+          <div class="reel-viewport">
+            <div class="reel-track" id="reelTrackRight"></div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="info-banner">
+        <div>
+          <strong>Facial Integrity Guarantee:</strong> Original silver-halide optical grains preserved. No AI facial synthetic generation or reshaping applied.
+        </div>
+        <div id="selectedSummary" style="color: var(--gold-light); font-weight: 600;">
+          Showing all 67 members
+        </div>
+      </div>
+    </section>
+
+    <!-- Alumni Directory & Roster -->
+    <section class="roster-section">
+      <div class="roster-header">
+        <div class="roster-title">
+          <span>Batch Directory</span>
+          <span class="roster-count" id="rosterCountBadge">67 members</span>
+        </div>
+
+        <div class="filter-tabs" id="filterTabs">
+          <button class="filter-tab active" data-filter="all">All (67)</button>
+          <button class="filter-tab" data-filter="sitting">Faculty &amp; Dignitaries (15)</button>
+          <button class="filter-tab" data-filter="standing1">Standing 1st Row (16)</button>
+          <button class="filter-tab" data-filter="standing2">Standing 2nd Row (17)</button>
+          <button class="filter-tab" data-filter="standing3">Standing 3rd Row (19)</button>
+        </div>
+      </div>
+
+      <!-- Alumni Cards Grid -->
+      <div class="alumni-grid" id="alumniGrid"></div>
+    </section>
+
+  </main>
+
+  <!-- "Then & Now" Alumni Profile Modal -->
+  <div class="modal-overlay" id="profileModalOverlay">
+    <div class="profile-modal">
+      <div class="modal-header">
+        <div class="modal-title-box">
+          <h3 id="modalName">Alumni Name</h3>
+          <p id="modalRowRole">Row • Designation</p>
+        </div>
+        <button class="close-modal-btn" id="closeModalBtn" title="Close">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Then & Now Comparison Cards -->
+        <div class="then-now-container">
+          <!-- 1991 Graduation Photo -->
+          <div class="photo-card">
+            <div class="photo-card-label">Then (1991)</div>
+            <img id="modalAvatar1991" class="photo-card-img" src="" alt="1991 Graduation Crop">
+            <div class="photo-card-note">Authentic 1991 graduation crop</div>
+          </div>
+
+          <!-- Current Photo -->
+          <div class="photo-card">
+            <div class="photo-card-label">Now (2026)</div>
+            <div id="currentPhotoWrapper">
+              <img id="modalAvatarCurrent" class="photo-card-img" style="display:none;" alt="Current Photo">
+              <label for="currentPhotoInput" class="current-photo-placeholder" id="uploadPlaceholder">
+                <span>📷 Upload / Add</span>
+                <span style="font-size:0.7rem; margin-top:4px;">Current Photo</span>
+              </label>
+              <input type="file" id="currentPhotoInput" accept="image/*" style="display:none;">
+            </div>
+            <div class="photo-card-note">35 Years Later</div>
+          </div>
+        </div>
+
+        <!-- Classmate Profile Fields -->
+        <div class="profile-fields">
+          <div class="field-group">
+            <label class="field-label" for="profileCity">Current Location / City</label>
+            <input type="text" id="profileCity" class="field-input" placeholder="e.g. Raipur, Mumbai, San Jose, London">
+          </div>
+
+          <div class="field-group">
+            <label class="field-label" for="profileRole">Current Role / Organization</label>
+            <input type="text" id="profileRole" class="field-input" placeholder="e.g. Managing Director, VP Engineering">
+          </div>
+
+          <div class="field-group">
+            <label class="field-label" for="profileContact">Contact / LinkedIn / Email</label>
+            <input type="text" id="profileContact" class="field-input" placeholder="e.g. linkedin.com/in/... or email">
+          </div>
+
+          <div class="field-group">
+            <label class="field-label" for="profileNickname">College Nickname</label>
+            <input type="text" id="profileNickname" class="field-input" placeholder="Campus nickname (if any)">
+          </div>
+
+          <div class="field-group full-width">
+            <label class="field-label" for="profileMemory">Memories / Message for the Batch</label>
+            <textarea id="profileMemory" class="field-textarea" placeholder="Share a favorite memory from Mechanical Dept, hostel life, workshops, or canteen..."></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button id="modalSpotlightBtn" class="spotlight-jump-btn"><i class="ph ph-crosshair" aria-hidden="true"></i> Spotlight in Photo</button>
+        <button id="saveProfileBtn" class="save-profile-btn"><i class="ph ph-floppy-disk" aria-hidden="true"></i> Save Update</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Engineering Milestone & Classroom Memory Modal -->
+  <div class="modal-overlay" id="milestoneModalOverlay">
+    <div class="profile-modal milestone-modal">
+      <div class="modal-header">
+        <div class="modal-title-box">
+          <div class="milestone-era-tag" id="milestoneEraTag">College Foundation (1987–1991)</div>
+          <h3 id="milestoneModalTitle">Carnot &amp; Rankine Thermodynamic Cycles</h3>
+          <p id="milestoneModalCategory">Thermodynamics • 1824 / 1988 Lab</p>
+        </div>
+        <button class="close-modal-btn" id="closeMilestoneModalBtn" title="Close">&times;</button>
+      </div>
+
+      <div class="modal-body milestone-modal-body">
+        <div class="milestone-schematic-wrap">
+          <img id="milestoneModalSvg" class="milestone-schematic-img" src="" alt="Engineering Schematic">
+        </div>
+
+        <div class="milestone-formula-card">
+          <span class="formula-label">Governing Mathematical Law / Equation</span>
+          <code id="milestoneModalFormula">η_th = 1 - (T_C / T_H) = W_net / Q_in</code>
+        </div>
+
+        <div class="milestone-desc-box">
+          <h4>Engineering Significance</h4>
+          <p id="milestoneModalDesc"></p>
+        </div>
+
+        <div class="milestone-memory-box">
+          <div class="memory-header"><i class="ph ph-chat-circle-dots"></i> 1987–1991 Batch Classroom Memory</div>
+          <p id="milestoneModalMemory"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Calibration Panel (Hidden by default, activated by crosshair) -->
+  <div id="calibrationHud" style="display:none; position:fixed; bottom:20px; left:20px; background:#162030; border:1px solid var(--border-gold); padding:12px; border-radius:8px; z-index:2000; font-size:0.8rem; box-shadow:0 10px 30px rgba(0,0,0,0.8);">
+    <strong style="color:var(--gold-light);">Pin Adjuster Mode Active</strong>
+    <p style="color:var(--text-muted); margin:4px 0;">Click on any person's face to update the pin coordinate.</p>
+    <div id="activeCalibratePerson" style="color:#fff; font-weight:600; margin-bottom:8px;">No person selected</div>
+    <div style="display:flex; gap:8px;">
+      <button id="copyJsonBtn" class="control-btn" style="padding:4px 8px; font-size:0.75rem;"><i class="ph ph-copy" aria-hidden="true"></i> Copy Coordinates JSON</button>
+      <button id="closeCalibrateBtn" class="control-btn" style="padding:4px 8px; font-size:0.75rem;">Done</button>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-msg" id="toastMsg">Update saved locally!</div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <p>Government Engineering College Raipur (M.P.) • Mechanical Engineering Batch of 1991</p>
+    <p>Preserving batch memories with optical authenticity and zero generative facial distortion.</p>
+  </footer>
+
+  <script src="milestones-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

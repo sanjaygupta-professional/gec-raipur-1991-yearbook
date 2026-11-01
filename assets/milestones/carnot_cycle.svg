@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="100%" height="100%">
+  <rect width="320" height="220" fill="#0A1628" rx="8"/>
+  <path d="M 40 190 L 290 190 M 40 190 L 40 25" stroke="#4A6572" stroke-width="2"/>
+  <text x="285" y="208" fill="#8BA9C4" font-family="monospace" font-size="12">V (Volume)</text>
+  <text x="15" y="25" fill="#8BA9C4" font-family="monospace" font-size="12">P</text>
+  <!-- P-V curve -->
+  <path d="M 80 50 Q 140 70 200 100 Q 220 140 230 170 Q 160 160 110 145 Q 85 100 80 50 Z" 
+        fill="rgba(232, 163, 23, 0.12)" stroke="#E8A317" stroke-width="2.5"/>
+  <!-- State points -->
+  <circle cx="80" cy="50" r="4" fill="#22D3EE"/>
+  <circle cx="200" cy="100" r="4" fill="#22D3EE"/>
+  <circle cx="230" cy="170" r="4" fill="#22D3EE"/>
+  <circle cx="110" cy="145" r="4" fill="#22D3EE"/>
+  <!-- Labels -->
+  <text x="70" y="42" fill="#F4F6F9" font-family="monospace" font-size="11" font-weight="bold">1</text>
+  <text x="210" y="98" fill="#F4F6F9" font-family="monospace" font-size="11" font-weight="bold">2</text>
+  <text x="240" y="175" fill="#F4F6F9" font-family="monospace" font-size="11" font-weight="bold">3</text>
+  <text x="95" y="152" fill="#F4F6F9" font-family="monospace" font-size="11" font-weight="bold">4</text>
+  <!-- Heat arrows -->
+  <path d="M 120 40 L 145 68" stroke="#F2A08C" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="145" y="45" fill="#F2A08C" font-family="monospace" font-size="11">Q_in (T_H)</text>
+  <path d="M 175 160 L 195 190" stroke="#68B2F8" stroke-width="2"/>
+  <text x="195" y="195" fill="#68B2F8" font-family="monospace" font-size="11">Q_out (T_C)</text>
+  <text x="135" y="125" fill="#E8A317" font-family="monospace" font-size="12" font-weight="bold">W_net</text>
+</svg>
